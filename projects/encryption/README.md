@@ -18,10 +18,10 @@ and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-|Uryyb, V'z jevgvat fbzrguvat. |Hello, I'm writing something.  |13 |
-|Byffi Uffcy. Biq uly sio? |Hello Allie, How are you?  |20 |
-|                 |                 |     |
-|                 |                 |     |
+|Uryyb, V'z jevgvat fbzrguvat. |Hello, I'm writing something.  |13|
+|Byffi Uffcy. Biq uly sio? |Hello Allie, How are you?  |20|
+|x pb uxct, wdl pgt ngj|I am fine, how are you?|15|
+|We did a great job!|We did a great job|0|
 
 
 ## Part 3: Connection to TCP/IP Model
@@ -32,14 +32,14 @@ Everything we've done in this activity takes place in the application layer. By 
 layer, it is encoded in binary. We've been working with text for this activity for convenience, but let's see what the binary
 looks like.
 
-Go back to the first encrypted message that you sent (it should be in `rsa_encryption_activity/send/encrypted_message.b64`).
+Go back to the first encrypted message that you sent (it should be in `rsa_encryption_activity/send/encrypted_message.b64).
 
 This message is represented as a string of letters, numbers, and symbols. But we know that the real message is in binary.
 
-Select the first six characters from this message and copy them here:
+Select the first six characters from this message and copy them here: ezs0cW
 
 Using the ASCII table, convert these five characters to binary (if necessary,
-include leading zeroes so that each character is 8 bits): 
+include leading zeroes so that each character is 8 bits): 011001010111101001110011001100000110001101010111
 
 ### Transport Layer: Break your message into packets
 
@@ -48,24 +48,24 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     =========
     Packet 1:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: [Allie]
+    Destination: [Taras]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01100101] [01111010]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Allie]
+    Destination: [Taras]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [01110011] [00110000]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Allie]
+    Destination: [Taras]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01100011] [01010111]
     =========
 
 ## Part 4: Reflection Questions
