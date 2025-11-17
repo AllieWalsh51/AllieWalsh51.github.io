@@ -71,9 +71,15 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+-- Symmetric encryption requires a shared secret, and asymmetric encryption doesn't, and instead requires a public and private key. In this simulation, we used asymmetric encryption to establish a shared secret that we could use for symmetric encryption. 
 - Why is it important that this protocol uses a new key for each message?
+-- This protocal uses a new key for every message so if a hacker does manage to decrypt it, they can only decrypt one message. 
 - Why is it important that you never share your secret key?
+-- You must never share your private key, because it allows the other person to decrypt any message sent to you.
 - In the transport layer, do these messages use TCP or UDP? Why?
+-- These messages use TCP to make sure all the packets arrive, and resend them if they were lost or corrupted.
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+-- After the packets have been created, they will be routed through the internet layer, which will decide where they go, and they will be sent through the link layer as electrical signals.
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
+-- This protocol encrypts the payload, but not the header. The hacker or adversary could see where the message is being sent and who it's being sent to.
