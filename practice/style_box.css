@@ -1,0 +1,30 @@
+#red, #blue, #green, #yellow, #purple{
+	background-clip:content-box; width:100px; height: 100px; 
+	border: 2px solid;
+}
+#red{
+	margin-left: 500px;
+	background-color: red;
+}
+#blue{
+	margin-left: 600px;
+	background-color: blue;
+	padding: 100px
+}
+#green{
+	margin-left: 10px;
+	background-color: green;
+	padding-left: 10px;
+}
+#yellow{
+	margin-left: 500px;
+	background-color: yellow;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-right: 10px;
+}
+#purple{
+	margin-left:400px;
+	background-color: purple;
+	padding-bottom: 100px;
+}

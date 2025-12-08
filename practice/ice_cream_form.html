@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+	<h1> You're invited to an ice cream party!</h1>
+	<p> Please fill out this form to help us plan.</p>
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" placeholder="name@example.com">
+	<label for="phone">Phone:</label>
+	<input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	<label for="Number of people">How many people will you bring?</label>
+	<input type="text" name="Number of people" maxlength="20">
+	<label for="flavor">What is your favorite flavor of ice cream?</label>
+	<label for="vanilla">Vanilla</label>
+	  <input type="radio" id="vanillan" name="ice_cream" value="vanilla" required>
+	  <label for="chocolate">Chocolate Chip</label>
+	  <input type="radio" id="chocolate" name="ice_cream" value="chocolate" required>
+	  <label for="strawberry">Strawberry</label>
+	  <input type="radio" id="strawberry" name="ice_cream" value="strawberry" required> 
+	  <label for="other">Other</label>
+	  <input type="radio" id="other" name="ice_cream" value="other" required>
+	<label for="toppings">What toppings do you like?</label>
+	  <label for="sprinkles">Sprinkles</label>
+	  <input type="checkbox" id="sprinkles" name="sprinkles">
+	  <label for="shell">Magic Shell</label>
+	  <input type="checkbox" id="shell" name="shell">
+	  <label for="chips">Chocolate Chips</label>
+	  <input type="checkbox" id="chips" name="chips">
+	  <label for="gummy">Gummy Bears</label>
+	  <input type="checkbox" id="gummy" name="gummy">
+	  <label for="other">Other</label>
+	  <input type="checkbox" id="other" name="other">
+	<label for="entertainment">What kind of entertainment should we have at the party?</label>
+	<select id="entertainment" name="entertainment">
+	  <option value="animals">Balloon Animals</option>
+	  <option value="bounce_house">Bounce House</option>
+	  <option value="clown">Clown</option>
+	  <option value="cornhole">Cornhole</option>
+	  <option value="DJ">DJ</option>
+	  <option value="painting">Face Painting</option>
+	  <option value="Magician">Magician</option>
+	</select>
+	<label for="comments">Do you have any other suggestions or comments?</label>
+	<input type="text" id="comments" name="comments">
+</body>
+</html>
