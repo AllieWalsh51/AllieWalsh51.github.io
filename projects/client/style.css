@@ -3,9 +3,15 @@ body{
 	font-family: Monospace;
 	margin: 20px;
 
-}
 
 .gray{ 
 	padding: 10px;
 	background-color: lightgrey;
+}
+
+.big{
+	font-size:30px;
+}
+.heading{
+	font-size=50px;
 }
