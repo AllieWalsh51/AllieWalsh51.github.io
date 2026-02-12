@@ -62,7 +62,7 @@
 
 		ctx.fillStyle = "saddlebrown";
 		ctx.beginPath();
-		ctx.ellipse(50, 400, 200, 50, 0, 0, Math.PI*2);
+		ctx.ellipse(400, 100, 200, 50, 0, 0, Math.PI*2);
 		ctx.fill();
 
 		//pls finish is not done.
@@ -75,14 +75,18 @@
 		ctx.lineTo(400, 450);
 		ctx.stroke();
 
-		//mouth
-		
+		//mouth		
 		ctx.strokeStyle = "pink";
 		ctx.lineWidth = 10;
 		ctx.fillStyle = "black";
-		ctx.arc(400, 300, 150, 0, Math.PI);
+		ctx.beginPath();
+		ctx.arc(400, 500, 150, 0, Math.PI);
+		ctx.lineTo(555,500);
 		ctx.fill();
-		ctx.stroke();
+//		ctx.stroke();
+
+		ctx.fillStyle = "white";
+		ctx.fillRect(250, 500, 300, 25);
 
 
 
