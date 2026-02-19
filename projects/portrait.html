@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>This is a canvas</title>
+		<style>
+			canvas{
+				border: black 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is a canvas</h1>
+		<canvas id="canvas" width="800" height="800">
+
+		</canvas>
+		<script>
+		const canvas = document.getElementById("canvas");
+		const ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#000000"
+		ctx.fillRect(0, 0, 800, 800);
+
+		// face
+		ctx.fillStyle = "#ffd2ba";
+		ctx.beginPath();
+		ctx.ellipse(400, 400, 300, 350, 0, 0, 2*Math.PI);
+		ctx.fill();
+
+// white part of eyes
+		ctx.fillStyle = "white";
+		ctx.beginPath();
+		ctx.ellipse(275, 300, 75, 50, 0, 0, Math.PI*2);
+		ctx.fill();
+
+		ctx.fillStyle = "white";
+		ctx.beginPath();
+		ctx.ellipse(525, 300, 75, 50,  0, 0, Math.PI*2);
+		ctx.fill();
+
+//colored part of eyes
+		ctx.fillStyle = "SaddleBrown";
+		ctx.beginPath();
+		ctx.arc(525, 300, 36, 0, Math.PI*2);
+		ctx.fill();
+
+		ctx.fillStyle = "SaddleBrown";
+		ctx.beginPath();
+		ctx.arc(275, 300, 36,  0, Math.PI*2);
+		ctx.fill();
+
+		//black part of eyes
+		ctx.fillStyle = "black";
+		ctx.beginPath();
+		ctx.arc(525, 300, 16,  0, Math.PI*2);
+		ctx.fill();
+
+		ctx.fillStyle = "black";
+		ctx.beginPath();
+		ctx.arc(275, 300, 16, 0, Math.PI*2);
+		ctx.fill();
+
+		//nose
+		ctx.strokeStyle = "black";
+		ctx.lineWidth = 2;
+		ctx.moveTo(400, 350);
+		ctx.lineTo(450, 450);
+		ctx.lineTo(400, 450);
+		ctx.stroke();
+
+		//mouth		
+		ctx.strokeStyle = "pink";
+		ctx.lineWidth = 10;
+		ctx.fillStyle = "black";
+		ctx.beginPath();
+		ctx.arc(400, 500, 150, 0, Math.PI);
+		ctx.lineTo(555,500);
+		ctx.fill();
+//		ctx.stroke();
+
+		ctx.fillStyle = "white";
+		ctx.fillRect(250, 500, 300, 25);
+
+//hair
+		ctx.fillStyle = "saddlebrown";
+		ctx.beginPath();
+		ctx.ellipse(400, 100, 200, 50, 0, 0, Math.PI*2);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.moveTo(200, 100);
+		ctx.lineTo(450, 500);
+		ctx.lineTo(700, 700);
+		ctx.lineTo(700, 300);
+		ctx.fill();
+			
+		ctx.beginPath();
+		ctx.moveTo(200, 100);
+		ctx.lineTo(700, 300);
+		ctx.lineTo(600, 100);
+		ctx.lineTo(200, 100);
+		ctx.fill();
+
+
+
+		</script>
+	</body>
+<html>
