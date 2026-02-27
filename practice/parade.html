@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Box</title>
+<style>
+canvas{border:1px black solid}
+</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width=800, height=800></canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d")
+			let x=1;
+			let x2 = -50;
+			let x3 = -50;
+			let x4 = -50;
+			let x5 = -50;
+			let speed = 5;
+			let speed2 = 5;
+			let speed3 = 5;
+			let time = 0;
+
+			function circle(color, circleY, circleRadius){
+			ctx.fillStyle = color;
+			ctx.beginPath();
+			ctx.arc(x3, circleY, circleRadius, 0, Math.PI*2);
+			ctx.fill();
+			}
+
+			function triangle(color, triX1, triY1, triX2, triY2, triX3, triY3){
+			ctx.fillStyle = color;
+			ctx.beginPath();
+			ctx.moveTo(triX1, triY1);
+			ctx.lineTo(triX2, triY2);
+			ctx.lineTo(triX3, triY3);
+			ctx.lineTo(triX1, triY1);
+			}
+	
+			function animate(){
+			time++;
+			if(time<170)
+			x = x + speed;
+			if(time>160){
+				x2 = x2 + speed;
+			}
+			if(time>320){
+				x3 = x3 + speed;
+			}
+			if(time>480){
+				x4 = x4 + speed;
+			}
+
+			ctx.fillStyle = "blue";
+			ctx.clearRect(0, 0, 800, 800);
+			ctx.fillRect(x, 100, 100, 100);
+			ctx.fillRect(x, 300, 100, 100);
+			ctx.fillRect(x, 500, 100, 100);
+
+			ctx.fillStyle = "red";
+			ctx.fillRect(x2, 50, 50, 50);
+			ctx.fillRect(x2, 150, 50, 50);
+			ctx.fillRect(x2, 250, 50, 50);
+			ctx.fillRect(x2, 350, 50, 50);
+			ctx.fillRect(x2, 450, 50, 50);
+			ctx.fillRect(x2, 550, 50, 50);
+			ctx.fillRect(x2, 650, 50, 50);
+			circle("red", 100, 30);
+			circle("orange", 200, 30);
+			circle("yellow", 300, 30);
+			circle("green", 400, 30);
+			circle("blue", 500, 30);
+			circle("purple", 600, 30);
+			circle("black", 700, 30);
+
+
+			requestAnimationFrame(animate);
+
+			}
+
+			animate();
+		</script>
+	</body>
+</html>
+
