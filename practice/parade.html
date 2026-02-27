@@ -14,27 +14,27 @@ canvas{border:1px black solid}
 			let x=1;
 			let x2 = -50;
 			let x3 = -50;
-			let x4 = -50;
-			let x5 = -50;
+			let x4 = -500;
+			let x5 = -570;
+			let x6 = -400;
 			let speed = 5;
 			let speed2 = 5;
 			let speed3 = 5;
 			let time = 0;
 
-			function circle(color, circleY, circleRadius){
+			function circle(xNum, color, circleY, circleRadius){
 			ctx.fillStyle = color;
 			ctx.beginPath();
-			ctx.arc(x3, circleY, circleRadius, 0, Math.PI*2);
+			ctx.arc(xNum, circleY, circleRadius, 0, Math.PI*2);
 			ctx.fill();
 			}
 
-			function triangle(color, triX1, triY1, triX2, triY2, triX3, triY3){
-			ctx.fillStyle = color;
-			ctx.beginPath();
-			ctx.moveTo(triX1, triY1);
-			ctx.lineTo(triX2, triY2);
-			ctx.lineTo(triX3, triY3);
-			ctx.lineTo(triX1, triY1);
+			function background(color, time1){
+			if(time>time1)
+				{
+				ctx.fillStyle = color;
+				ctx.fillRect(0, 0, 800, 800)
+				}
 			}
 	
 			function animate(){
@@ -49,6 +49,12 @@ canvas{border:1px black solid}
 			}
 			if(time>480){
 				x4 = x4 + speed;
+			}
+			if(time>850){
+			x5 = x5 + speed;
+			}
+			if(time>1100){
+			x6 = x6 + speed;
 			}
 
 			ctx.fillStyle = "blue";
@@ -65,13 +71,29 @@ canvas{border:1px black solid}
 			ctx.fillRect(x2, 450, 50, 50);
 			ctx.fillRect(x2, 550, 50, 50);
 			ctx.fillRect(x2, 650, 50, 50);
-			circle("red", 100, 30);
-			circle("orange", 200, 30);
-			circle("yellow", 300, 30);
-			circle("green", 400, 30);
-			circle("blue", 500, 30);
-			circle("purple", 600, 30);
-			circle("black", 700, 30);
+			circle(x3, "red", 100, 30);
+			circle(x3, "orange", 200, 30);
+			circle(x3, "yellow", 300, 30);
+			circle(x3, "green", 400, 30);
+			circle(x3, "blue", 500, 30);
+			circle(x3, "purple", 600, 30);
+			circle(x3, "black", 700, 30);
+
+			background("black", 500);
+			circle(x4, "red", 400, 350);
+			circle(x4, "orange", 400, 300);
+			circle(x4, "yellow", 400, 250);
+			circle(x4, "green", 400, 200);
+			circle(x4, "blue", 400, 150);
+			circle(x4, "purple", 400, 100);
+			circle(x4, "black", 400, 50);
+
+			ctx.font = "40px Arial";
+			ctx.fillStyle = "red";
+			ctx.fillText("Hope this wasn't boring", x5, 400);
+
+		
+			
 
 
 			requestAnimationFrame(animate);
