@@ -1,21 +1,22 @@
-#
+# MAYDAY MAYDAY!
 
 ## Setting
 
-You are in a plane where the engine fails in the middle of nowhere. You have to land safely.
+You are a student pilot flying solo when the engine fails in the middle of nowhere. You have to land safely.
 
 ```mermaid
 graph TD;
-Start-->ApproachA;
-Start-->ApproachB;
 Start-->Field;
-Runway8-->ApproachA;
-Runway26-->ApproachA;
-Runway32-->ApproachB;
-Runway4-->ApproachB;
+Start-->Airport1;
+Start-->Airport2;
+Airport1-->Runway6;
+Airport1-->Runway25;
+Airport2-->Runway14;
+Airport2-->Runway32;
 
 ```
 ## Story
+You are a student pilot on your first solo, and the engine fails. You must pick the right airport and land or you die and your instructer gets fired because they signed you off. What will you do?
 
 ## Global variables
 
