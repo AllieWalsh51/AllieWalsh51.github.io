@@ -15,7 +15,7 @@ AirportA-->Runway14;
 AirportA-->Runway32;
 AirportB-->Runway2;
 AirportB-->Runway20;
-AirportB-->Field;
+AirportB-->Other field;
 ```
 ## Story
 You are a student pilot on your first solo, and the engine fails. You must pick the right airport and land or you die and your instructer gets fired because they signed you off. What will you do?
