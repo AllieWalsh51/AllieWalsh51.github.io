@@ -7,13 +7,15 @@ You are a student pilot flying solo when the engine fails in the middle of nowhe
 ```mermaid
 graph TD;
 Start-->Field;
-Start-->Airport1;
-Start-->Airport2;
-Airport1-->Runway6;
-Airport1-->Runway25;
-Airport2-->Runway14;
-Airport2-->Runway32;
-
+Start-->AirportA;
+Start-->AirportB;
+AirportA-->Runway6;
+AirportA-->Runway24;
+AirportA-->Runway14;
+AirportA-->Runway32;
+AirportB-->Runway2;
+AirportB-->Runway20;
+AirportB-->Field;
 ```
 ## Story
 You are a student pilot on your first solo, and the engine fails. You must pick the right airport and land or you die and your instructer gets fired because they signed you off. What will you do?
