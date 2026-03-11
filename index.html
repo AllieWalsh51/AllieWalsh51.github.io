@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		    <link rel="stylesheet" href="style.css">
+
 		<title>Images</title>
 		<script src="js/validate.js">
 		</script>
@@ -10,13 +12,12 @@
 	<body>
 		<img src="images/bee.jpeg"
      alt="bee"
-     srcset="images/bee-small.jpeg 480w,
-             images/bee-medium.jpeg 800w,
-             images/bee-large.jpeg 1200w"
-     sizes="(max-width: 480px) 95vw,
-            (max-width: 800px) 45vw,
-            30vw">
-	<p>I'm doing this for educational purposes please don't sue me here's where I got it from</p>
+      usemap="#image-map">
+<map name="image-map">
+    <area target="_blank" alt="bee" title="bee" href="https://en.wikipedia.org/wiki/Bee" coords="252,54,63,168" shape="rect">
+</map>
+	
+		<p> Bug. <br> <br>  I'm doing this for educational purposes please don't sue me here's where I got it from</p>
 	<a href="https://commons.wikimedia.org/wiki/File:Honey_bee_%28Apis_mellifera%29.jpg">I  got it from here.</a>
 <!-- https://commons.wikimedia.org/wiki/File:Honey_bee_%28Apis_mellifera%29.jpg -->
 	</body>

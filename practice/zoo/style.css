@@ -1,0 +1,36 @@
+table, th, tr, td{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+body
+	{
+	background-color: #000000;
+	color: black;
+	font-family: "courier new", serif;
+	margin: 5px;
+}
+h1
+{
+	background-color: #333333;
+	display: inline;
+	padding: 5px;
+	border: 2px black solid;
+}
+h1, h2, p, th, td, table, tr
+	{
+		color: #FFFFFF
+	}
+.info{
+
+	background-color: #1a0a55;
+}
+
+.highlight{
+	background-color: #072751;
+}
+
+#animals
+{
+	text-decoration: underline;
+	color: #a699d5;
+}

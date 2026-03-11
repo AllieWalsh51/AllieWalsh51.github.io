@@ -1,0 +1,20 @@
+table, th, tr, td{
+	border: 1px solid #000000;
+	border-collapse:collapse;
+}
+a 
+	{
+		color: #EEEEEE;
+	}
+body
+	{
+	background-color: #000000;
+	color: #000000;
+	font-family: "courier new", serif;
+	margin: 5px;
+}
+h1, h2, p, th, td, table, tr
+	{
+		color: #FFFFFF
+	}
+

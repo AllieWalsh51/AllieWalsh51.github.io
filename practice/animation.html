@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Box</title>
+<style>
+canvas{border:1px black solid}
+</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width=800, height=800></canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d")
+			let x=1;
+			let x2 = 1;
+			let speed = 5;
+			let speed2 = 5;
+			let time = 0;
+
+			function animate(){
+			time++;
+			if(time<160)
+			x = x + speed;
+			console.log(x);
+			if(time>160)
+				{x2 = x2 + speed;}
+				/* if(x>800)
+				{
+				x=1;
+				}
+				if(x2>800)
+					{x2 = 1}
+				*/
+
+			ctx.clearRect(0, 0, 800, 800);
+			ctx.fillRect(x, 100, 100, 100);
+			ctx.fillStyle = "red";
+			ctx.fillRect(x2, 300, 10, 10);
+			requestAnimationFrame(animate);
+
+			}
+
+			animate();
+		</script>
+	</body>
+</html>
+
