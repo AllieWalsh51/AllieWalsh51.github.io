@@ -22,4 +22,4 @@ You are a student pilot on your first solo, and the engine fails. You must pick 
 
 ## Global variables
 
-The most important variable is 'isDead,' which is how the thing knows if you have won or lost. Another important variable would be 'altitude,' which changes what you can do, and if you get too low, 'isDead' is automatically true (because you crash and die if you don't save the landing). Your altitude starts at 5000ft, and you have to decide what to do before it runs out. Do you think you can survive?
+There are multiple global variables. The first one is "atc," which tracks whether you've talked to atc, though that doesn't do much because it doesn't change the story lines. The most important one is "towerBool," because it allows you to win the game (you can't win if it's false even if you pick the right path). There are other globals as well, like altitude, with ends the game if it gets too low.
