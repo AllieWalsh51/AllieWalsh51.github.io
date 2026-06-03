@@ -13,7 +13,7 @@ body
 	font-family: "courier new", serif;
 	margin: 5px;
 }
-h1, h2, p, th, td, table, tr, a
+h1, h2, h3, p, th, td, table, tr, a
 	{
 		margin: 20px;
 		color: #FFFFFF
@@ -23,4 +23,7 @@ p{
 }
 .img{
 	margin: 20px;
+}
+a{
+	background-color: #3b006b;
 }
