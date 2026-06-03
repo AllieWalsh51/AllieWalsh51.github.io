@@ -13,8 +13,14 @@ body
 	font-family: "courier new", serif;
 	margin: 5px;
 }
-h1, h2, p, th, td, table, tr
+h1, h2, p, th, td, table, tr, a
 	{
+		margin: 20px;
 		color: #FFFFFF
 	}
-
+p{
+	font-size: 18px;
+}
+.img{
+	margin: 20px;
+}
