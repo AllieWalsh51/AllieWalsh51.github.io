@@ -13,16 +13,20 @@ body
 	font-family: "courier new", serif;
 	margin: 5px;
 }
-h1, h2, h3, p, th, td, table, tr, a
+h1, h2, h3, p, th, td, table, tr, a, li
 	{
 		margin: 20px;
 		color: #FFFFFF
 	}
+figcaption{
+	margin: 10px;
+	color: #FFFFFF
+}
 p{
 	font-size: 18px;
 }
 .img{
-	margin: 20px;
+	margin: 10px;
 }
 a{
 	background-color: #3b006b;
